@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Portafolio</title>
+  <!-- Usar Tailwind CDN (rápido para prototipos) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <header class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white">
+    <div class="max-w-4xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center md:justify-between">
+      <div class="text-center md:text-left">
+        <h1 class="text-3xl md:text-4xl font-extrabold">¡Hola! Soy Andres!</h1>
+        <p class="mt-1 text-indigo-200">Desarrollador Web Front-End</p>
+      </div>
+      <nav class="mt-4 md:mt-0">
+        <ul class="flex space-x-4">
+          <li><a class="hover:underline text-white" href="#presentacion">Presentación</a></li>
+          <li><a class="hover:underline text-white" href="#habilidades">Habilidades</a></li>
+          <li><a class="hover:underline text-white" href="#proyectos">Proyectos</a></li>
+          <li><a class="hover:underline text-white" href="#redes">Redes Sociales</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-6 py-12 space-y-12">
+    <section id="presentacion" class="bg-white rounded-lg shadow-md p-6">
+      <div class="grid md:grid-cols-2 gap-6 items-center">
+        <img src="img/etc/soyAndres.jpeg" alt="Foto de mí" class="w-44 h-44 md:w-56 md:h-56 rounded-full object-cover mx-auto md:mx-0 shadow-lg">
+        <div class="descripcion">
+          <h2 class="text-2xl font-semibold mb-2">Sobre mí</h2>
+          <p class="text-gray-600">Soy un desarrollador web Front-End con 0 años de experiencia (y contando). Me apasiona el desarrollo web y disfruto creando experiencias digitales.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="habilidades" class="bg-white rounded-lg shadow-md p-6">
+      <h2 class="text-2xl font-semibold mb-4">Habilidades</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+        <div class="flex flex-col items-center p-4">
+          <img src="img/etc/html.webp" alt="HTML" class="w-16 h-16 object-contain mb-2">
+          <p class="text-sm font-medium">HTML</p>
+        </div>
+        <div class="flex flex-col items-center p-4">
+          <img src="img/etc/CSS.png" alt="CSS" class="w-16 h-16 object-contain mb-2">
+          <p class="text-sm font-medium">CSS</p>
+        </div>
+        <div class="flex flex-col items-center p-4">
+          <img src="img/etc/JavaScript.png" alt="JavaScript" class="w-16 h-16 object-contain mb-2">
+          <p class="text-sm font-medium">JavaScript</p>
+        </div>
+        <div class="flex flex-col items-center p-4">
+          <img src="img/etc/pseint.png" alt="Pseint" class="w-16 h-16 object-contain mb-2">
+          <p class="text-sm font-medium">Pseint</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyectos" class="bg-white rounded-lg shadow-md p-6">
+      <h2 class="text-2xl font-semibold mb-4">Proyectos</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="proyecto bg-gray-50 rounded-lg p-4 shadow-sm flex flex-col items-start">
+          <img src="img/proyectos/mp3.png" alt="Captura del Proyecto 1" class="w-full h-40 object-cover rounded mb-3">
+          <h3 class="text-lg font-medium">Proyecto 1</h3>
+          <p class="text-gray-600 mt-1">Una muestra de un mp3 donde personalmente usé canciones personales.</p>
+          <a class="mt-3 inline-block text-indigo-600 hover:underline" href="https://elprogramas22.github.io/reproductor-de-musica/" target="_blank">Ver más</a>
+        </div>
+        <div class="proyecto bg-gray-50 rounded-lg p-4 shadow-sm flex flex-col items-start">
+          <img src="img/proyectos/clima.png" alt="Captura del Proyecto 2" class="w-full h-40 object-cover rounded mb-3">
+          <h3 class="text-lg font-medium">Proyecto 2</h3>
+          <p class="text-gray-600 mt-1">En esta página puedes consultar el clima de varias ciudades.</p>
+          <a class="mt-3 inline-block text-indigo-600 hover:underline" href="https://elprogramas22.github.io/clima-con-una-API/" target="_blank">Ver más</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="redes" class="bg-white rounded-lg shadow-md p-6">
+      <h2 class="text-2xl font-semibold mb-4">Redes Sociales</h2>
+      <div class="flex items-center space-x-4">
+        <a href="https://github.com/elprogramas22" target="_blank" class="block">
+          <img src="img/etc/github.webp" alt="GitHub" class="w-10 h-10">
+        </a>
+        <a href="" target="_blank" class="block">
+          <img src="img/etc/linkedin-redondito.avif" alt="LinkedIn" class="w-10 h-10">
+        </a>
+        <a href="" target="_blank" class="block">
+          <img src="img/etc/twitter-x.avif" alt="Twitter/x" class="w-10 h-10">
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-gray-800 text-white py-6 mt-12">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <p>Contacto: miEmail@ejemplo.com</p>
+    </div>
+  </footer>
+</body>
+</html>
